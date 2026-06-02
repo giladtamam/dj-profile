@@ -3,178 +3,67 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ארז דלל — DJ</title>
-  <meta name="description" content="ארז דלל — תקליטן האוס ומיינסטרים לחתונות, אירועים ומסיבות. הזמינו אתכם לרחבה." />
-  <meta property="og:title" content="ארז דלל — DJ" />
-  <meta property="og:description" content="תקליטן האוס ומיינסטרים לחתונות, אירועים ומסיבות." />
+  <title>DJ ארז דלל</title>
+  <meta name="description" content="DJ ארז דלל — הקצב מתחיל כאן. עקבו ברשתות החברתיות." />
+  <meta property="og:title" content="DJ ארז דלל" />
+  <meta property="og:description" content="הקצב מתחיל כאן." />
   <meta property="og:type" content="website" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700;900&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- ניווט -->
-  <header class="nav" id="nav">
-    <div class="container nav__inner">
-      <a href="#hero" class="nav__logo">ארז דלל<span>.</span></a>
-      <button class="nav__toggle" id="navToggle" aria-label="תפריט">
-        <span></span><span></span><span></span>
-      </button>
-      <nav class="nav__links" id="navLinks">
-        <a href="#about">אודות</a>
-        <a href="#services">שירותים</a>
-        <a href="#gallery">גלריה</a>
-        <a href="#events">אירועים</a>
-        <a href="#contact">צור קשר</a>
-      </nav>
-    </div>
-  </header>
+  <main class="page">
+    <!-- כותרת -->
+    <header class="head">
+      <p class="head__dj">D J</p>
+      <h1 class="head__name">
+        <span class="head__name-1">EREZ</span>
+        <span class="head__name-2">DALAL</span>
+      </h1>
+      <p class="head__tagline">הקצב מתחיל כאן</p>
+    </header>
 
-  <!-- כותרת ראשית -->
-  <section class="hero" id="hero">
-    <div class="hero__bg"></div>
-    <div class="container hero__content">
-      <p class="hero__eyebrow">DJ &amp; מפיק מוזיקלי</p>
-      <h1 class="hero__title">ארז דלל</h1>
-      <p class="hero__subtitle">האוס · מיינסטרים · רחבה שלא נעצרת</p>
-      <div class="hero__cta">
-        <a href="#contact" class="btn btn--primary">הזמינו הופעה</a>
-        <a href="#gallery" class="btn btn--ghost">צפו בגלריה</a>
-      </div>
-      <div class="hero__stats">
-        <div class="stat"><span class="stat__num">500+</span><span class="stat__label">אירועים</span></div>
-        <div class="stat"><span class="stat__num">10</span><span class="stat__label">שנות ניסיון</span></div>
-        <div class="stat"><span class="stat__num">100%</span><span class="stat__label">רחבה מלאה</span></div>
-      </div>
-    </div>
-    <a href="#about" class="hero__scroll" aria-label="גלול למטה">↓</a>
-  </section>
+    <!-- תקליט עם תמונות -->
+    <section class="vinyl" aria-label="גלריה">
+      <div class="vinyl__disc"></div>
+      <div class="vinyl__shine"></div>
 
-  <!-- אודות -->
-  <section class="section about" id="about">
-    <div class="container about__grid">
-      <div class="about__photo">
-        <div class="about__photo-inner">EREZ<br>DALAL</div>
-      </div>
-      <div class="about__text">
-        <h2 class="section__title">קצת עליי</h2>
-        <p>שלום, אני ארז דלל — תקליטן ומפיק מוזיקלי עם תשוקה אמיתית לרחבת הריקודים. כבר למעלה מעשור שאני מלווה חתונות, אירועי חברה ומסיבות פרטיות, ויודע בדיוק איך לקרוא את הקהל ולהוביל אותו ללילה בלתי נשכח.</p>
-        <p>הסאונד שלי משלב את הלהיטים הכי חמים של המיינסטרים עם ביטים של האוס שמחממים את הרחבה. כל סט נבנה בהתאמה אישית לאירוע ולאופי שלכם — מהרגע הראשון ועד הלהיט האחרון.</p>
-        <ul class="about__tags">
-          <li>House</li>
-          <li>Mainstream</li>
-          <li>Mashups</li>
-          <li>Live Mixing</li>
-        </ul>
-      </div>
-    </div>
-  </section>
+      <!-- תמונה מרכזית -->
+      <figure class="vinyl__center photo" style="--img:url('https://picsum.photos/seed/djdeck/420/420')"></figure>
 
-  <!-- שירותים -->
-  <section class="section services" id="services">
-    <div class="container">
-      <h2 class="section__title section__title--center">מה אני מביא לאירוע</h2>
-      <div class="services__grid">
-        <article class="card">
-          <div class="card__icon">💍</div>
-          <h3>חתונות</h3>
-          <p>פסקול מושלם לכל רגע — מהחופה ועד הרחבה שלא נעצרת. סאונד מקצועי ותיאום מלא עם בעלי המקצוע.</p>
-        </article>
-        <article class="card">
-          <div class="card__icon">🏢</div>
-          <h3>אירועי חברה</h3>
-          <p>ערבי גאלה, השקות ומסיבות סוף שנה. אווירה מדויקת שמתאימה למותג ולקהל שלכם.</p>
-        </article>
-        <article class="card">
-          <div class="card__icon">🎉</div>
-          <h3>מסיבות פרטיות</h3>
-          <p>ימי הולדת, בר/בת מצווה ואירועים אינטימיים. סט אישי שמרקיד את כל המשפחה.</p>
-        </article>
-        <article class="card">
-          <div class="card__icon">🎚️</div>
-          <h3>הגברה ותאורה</h3>
-          <p>מערכת סאונד ותאורה מקצועית בהתאמה לגודל האירוע, כולל הקמה ופירוק.</p>
-        </article>
-      </div>
-    </div>
-  </section>
+      <!-- 6 תמונות מסביב -->
+      <figure class="thumb photo" style="--img:url('https://picsum.photos/seed/dj1/300/300'); --x:33%; --y:22%;"></figure>
+      <figure class="thumb photo" style="--img:url('https://picsum.photos/seed/dj2/300/300'); --x:64%; --y:21%;"></figure>
+      <figure class="thumb photo" style="--img:url('https://picsum.photos/seed/dj3/300/300'); --x:81%; --y:53%;"></figure>
+      <figure class="thumb photo" style="--img:url('https://picsum.photos/seed/dj4/300/300'); --x:65%; --y:81%;"></figure>
+      <figure class="thumb photo" style="--img:url('https://picsum.photos/seed/dj5/300/300'); --x:36%; --y:81%;"></figure>
+      <figure class="thumb photo" style="--img:url('https://picsum.photos/seed/dj6/300/300'); --x:18%; --y:55%;"></figure>
+    </section>
 
-  <!-- גלריה -->
-  <section class="section gallery" id="gallery">
-    <div class="container">
-      <h2 class="section__title section__title--center">גלריה</h2>
-      <div class="gallery__grid">
-        <div class="gallery__item" style="--i:1">🎧</div>
-        <div class="gallery__item" style="--i:2">🔊</div>
-        <div class="gallery__item" style="--i:3">✨</div>
-        <div class="gallery__item" style="--i:4">🪩</div>
-        <div class="gallery__item" style="--i:5">🎶</div>
-        <div class="gallery__item" style="--i:6">🎆</div>
-      </div>
-      <p class="gallery__note">* החליפו את האימוג'ים בתמונות אמיתיות מתיקיית <code>assets</code>.</p>
-    </div>
-  </section>
+    <!-- קישורים -->
+    <nav class="links" aria-label="רשתות חברתיות">
+      <a class="link" href="#" target="_blank" rel="noopener">
+        <span>Instagram</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2.2c3.2 0 3.6 0 4.9.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.86s0 3.6-.07 4.86c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.86.07s-3.6 0-4.86-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.21 15.6 2.2 15.2 2.2 12s0-3.6.07-4.86c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.46 2.21 8.84 2.2 12 2.2m0 1.62c-3.15 0-3.52.01-4.76.07-.92.04-1.42.2-1.75.33-.44.17-.75.37-1.08.7-.33.33-.53.64-.7 1.08-.13.33-.29.83-.33 1.75-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.04.92.2 1.42.33 1.75.17.44.37.75.7 1.08.33.33.64.53 1.08.7.33.13.83.29 1.75.33 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c.92-.04 1.42-.2 1.75-.33.44-.17.75-.37 1.08-.7.33-.33.53-.64.7-1.08.13-.33.29-.83.33-1.75.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.04-.92-.2-1.42-.33-1.75a2.9 2.9 0 0 0-.7-1.08 2.9 2.9 0 0 0-1.08-.7c-.33-.13-.83-.29-1.75-.33-1.24-.06-1.61-.07-4.76-.07m0 2.76a5.42 5.42 0 1 1 0 10.84 5.42 5.42 0 0 1 0-10.84m0 1.62a3.8 3.8 0 1 0 0 7.6 3.8 3.8 0 0 0 0-7.6m5.6-2.9a1.27 1.27 0 1 1 0 2.54 1.27 1.27 0 0 1 0-2.54Z"/></svg>
+      </a>
+      <a class="link" href="#" target="_blank" rel="noopener">
+        <span>Facebook</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.33-.04-1.57-.14-2.88-.14C11.88 2 10 3.66 10 6.7v2.8H7v4h3V22h4v-8.5Z"/></svg>
+      </a>
+      <a class="link" href="mailto:erez.dalal@example.com">
+        <span>Gmail</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Zm9 7.1 8-5.1H4l8 5.1Zm0 2-8-5.07V17h16V9.03L12 14.1Z"/></svg>
+      </a>
+      <a class="link" href="#" target="_blank" rel="noopener">
+        <span>Spotify</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm4.59 14.43a.62.62 0 0 1-.86.21c-2.35-1.44-5.31-1.76-8.8-.96a.62.62 0 1 1-.28-1.22c3.82-.87 7.1-.5 9.73 1.11.3.18.39.57.21.86Zm1.22-2.72a.78.78 0 0 1-1.07.26c-2.69-1.65-6.79-2.13-9.97-1.17a.78.78 0 1 1-.45-1.49c3.63-1.1 8.15-.56 11.24 1.33.37.23.49.71.25 1.07Zm.11-2.84C14.8 8.96 9.5 8.78 6.42 9.72a.94.94 0 1 1-.54-1.8c3.53-1.07 9.38-.86 13.08 1.34a.94.94 0 0 1-.96 1.61Z"/></svg>
+      </a>
+    </nav>
 
-  <!-- אירועים -->
-  <section class="section events" id="events">
-    <div class="container">
-      <h2 class="section__title section__title--center">אירועים קרובים</h2>
-      <ul class="events__list">
-        <li class="event">
-          <div class="event__date"><span class="event__day">14</span><span class="event__month">יוני</span></div>
-          <div class="event__info"><h3>חתונה · גני התערוכה</h3><p>תל אביב · אירוע פרטי</p></div>
-          <span class="event__badge">סגור</span>
-        </li>
-        <li class="event">
-          <div class="event__date"><span class="event__day">28</span><span class="event__month">יוני</span></div>
-          <div class="event__info"><h3>מסיבת קיץ · רוטשילד</h3><p>תל אביב · פתוח לקהל</p></div>
-          <span class="event__badge event__badge--open">כרטיסים</span>
-        </li>
-        <li class="event">
-          <div class="event__date"><span class="event__day">12</span><span class="event__month">יולי</span></div>
-          <div class="event__info"><h3>אירוע חברה · נמל הרצליה</h3><p>הרצליה · פרטי</p></div>
-          <span class="event__badge">סגור</span>
-        </li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- צור קשר -->
-  <section class="section contact" id="contact">
-    <div class="container contact__inner">
-      <h2 class="section__title section__title--center">בואו נדבר</h2>
-      <p class="contact__lead">מתכננים אירוע? השאירו פרטים ואחזור אליכם עם הצעה מותאמת אישית.</p>
-      <form class="contact__form" id="contactForm" novalidate>
-        <div class="field">
-          <label for="name">שם מלא</label>
-          <input type="text" id="name" name="name" placeholder="השם שלכם" required />
-        </div>
-        <div class="field">
-          <label for="phone">טלפון</label>
-          <input type="tel" id="phone" name="phone" placeholder="050-0000000" required />
-        </div>
-        <div class="field field--full">
-          <label for="message">פרטי האירוע</label>
-          <textarea id="message" name="message" rows="4" placeholder="סוג האירוע, תאריך, מיקום ומספר אורחים"></textarea>
-        </div>
-        <button type="submit" class="btn btn--primary btn--block">שלחו הודעה</button>
-        <p class="contact__status" id="formStatus" role="status"></p>
-      </form>
-      <div class="contact__socials">
-        <a href="#" aria-label="Instagram">Instagram</a>
-        <a href="#" aria-label="WhatsApp">WhatsApp</a>
-        <a href="#" aria-label="SoundCloud">SoundCloud</a>
-      </div>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <div class="container">
-      <p>© <span id="year"></span> ארז דלל · כל הזכויות שמורות</p>
-    </div>
-  </footer>
-
+    <footer class="foot">© <span id="year"></span> DJ ארז דלל</footer>
+  </main>
   <script src="script.js"></script>
 </body>
 </html>
