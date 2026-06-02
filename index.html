@@ -3,67 +3,89 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DJ ארז דלל</title>
-  <meta name="description" content="DJ ארז דלל — הקצב מתחיל כאן. עקבו ברשתות החברתיות." />
-  <meta property="og:title" content="DJ ארז דלל" />
-  <meta property="og:description" content="הקצב מתחיל כאן." />
-  <meta property="og:type" content="website" />
+  <title>Erez Dalal – DJ</title>
+  <meta name="description" content="DJ ארז דלל — הקצב מתחיל כאן. עקבו ברשתות והזמינו הופעה." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700;900&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <main class="page">
-    <!-- כותרת -->
-    <header class="head">
-      <p class="head__dj">D J</p>
-      <h1 class="head__name">
-        <span class="head__name-1">EREZ</span>
-        <span class="head__name-2">DALAL</span>
-      </h1>
-      <p class="head__tagline">הקצב מתחיל כאן</p>
-    </header>
+  <div class="page" id="home">
+    <div class="particles" id="particles"></div>
+    <div class="glow-orb glow-orb-1"></div>
+    <div class="glow-orb glow-orb-2"></div>
 
-    <!-- תקליט עם תמונות -->
-    <section class="vinyl" aria-label="גלריה">
-      <div class="vinyl__disc"></div>
-      <div class="vinyl__shine"></div>
+    <!-- שם האמן (בפינה השמאלית-עליונה ב-RTL) -->
+    <div class="top-left">
+      <p class="dj-label">DJ</p>
+      <h1 class="artist-name">EREZ<br>DALAL</h1>
+      <p class="tagline">הקצב מתחיל כאן</p>
+    </div>
 
-      <!-- תמונה מרכזית -->
-      <figure class="vinyl__center photo" style="--img:url('https://picsum.photos/seed/djdeck/420/420')"></figure>
+    <!-- התקליט המסתובב -->
+    <div class="disk-wrapper" id="diskWrapper">
+      <div class="disk" id="disk">
+        <div class="groove g1"></div>
+        <div class="groove g2"></div>
+        <div class="groove g3"></div>
+        <div class="groove g4"></div>
+        <div class="groove g5"></div>
+        <div class="groove g6"></div>
+        <div class="groove g7"></div>
+        <div class="groove g8"></div>
 
-      <!-- 6 תמונות מסביב -->
-      <figure class="thumb photo" style="--img:url('https://picsum.photos/seed/dj1/300/300'); --x:33%; --y:22%;"></figure>
-      <figure class="thumb photo" style="--img:url('https://picsum.photos/seed/dj2/300/300'); --x:64%; --y:21%;"></figure>
-      <figure class="thumb photo" style="--img:url('https://picsum.photos/seed/dj3/300/300'); --x:81%; --y:53%;"></figure>
-      <figure class="thumb photo" style="--img:url('https://picsum.photos/seed/dj4/300/300'); --x:65%; --y:81%;"></figure>
-      <figure class="thumb photo" style="--img:url('https://picsum.photos/seed/dj5/300/300'); --x:36%; --y:81%;"></figure>
-      <figure class="thumb photo" style="--img:url('https://picsum.photos/seed/dj6/300/300'); --x:18%; --y:55%;"></figure>
-    </section>
+        <!-- טבעת התמונות (מסתובבת עם התקליט, נשארת זקופה) -->
+        <div class="photo-ring">
+          <div class="photo-item p1"><img src="https://picsum.photos/seed/dj1/300/300" alt="DJ Set" /></div>
+          <div class="photo-item p2"><img src="https://picsum.photos/seed/dj2/300/300" alt="Stage" /></div>
+          <div class="photo-item p3"><img src="https://picsum.photos/seed/dj3/300/300" alt="Crowd" /></div>
+          <div class="photo-item p4"><img src="https://picsum.photos/seed/dj4/300/300" alt="Mix" /></div>
+          <div class="photo-item p5"><img src="https://picsum.photos/seed/dj5/300/300" alt="Festival" /></div>
+          <div class="photo-item p6"><img src="https://picsum.photos/seed/dj6/300/300" alt="Studio" /></div>
+        </div>
 
-    <!-- קישורים -->
-    <nav class="links" aria-label="רשתות חברתיות">
-      <a class="link" href="#" target="_blank" rel="noopener">
-        <span>Instagram</span>
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2.2c3.2 0 3.6 0 4.9.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.86s0 3.6-.07 4.86c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.86.07s-3.6 0-4.86-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.21 15.6 2.2 15.2 2.2 12s0-3.6.07-4.86c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.46 2.21 8.84 2.2 12 2.2m0 1.62c-3.15 0-3.52.01-4.76.07-.92.04-1.42.2-1.75.33-.44.17-.75.37-1.08.7-.33.33-.53.64-.7 1.08-.13.33-.29.83-.33 1.75-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.04.92.2 1.42.33 1.75.17.44.37.75.7 1.08.33.33.64.53 1.08.7.33.13.83.29 1.75.33 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c.92-.04 1.42-.2 1.75-.33.44-.17.75-.37 1.08-.7.33-.33.53-.64.7-1.08.13-.33.29-.83.33-1.75.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.04-.92-.2-1.42-.33-1.75a2.9 2.9 0 0 0-.7-1.08 2.9 2.9 0 0 0-1.08-.7c-.33-.13-.83-.29-1.75-.33-1.24-.06-1.61-.07-4.76-.07m0 2.76a5.42 5.42 0 1 1 0 10.84 5.42 5.42 0 0 1 0-10.84m0 1.62a3.8 3.8 0 1 0 0 7.6 3.8 3.8 0 0 0 0-7.6m5.6-2.9a1.27 1.27 0 1 1 0 2.54 1.27 1.27 0 0 1 0-2.54Z"/></svg>
+        <div class="disk-shine"></div>
+      </div>
+
+      <!-- מרכז קבוע (label שלא מסתובב) -->
+      <div class="disk-center-static">
+        <div class="center-label">
+          <div class="center-overlay"><span>ED</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- כפתורי רשתות + הזמנה (בצד הימני ב-RTL) -->
+    <div class="right-panel">
+      <div class="social-buttons">
+        <a href="#" target="_blank" rel="noopener" class="social-btn instagram">
+          <i class="fab fa-instagram"></i><span>Instagram</span>
+        </a>
+        <a href="#" target="_blank" rel="noopener" class="social-btn facebook">
+          <i class="fab fa-facebook-f"></i><span>Facebook</span>
+        </a>
+        <a href="mailto:booking@erezdalal.com" class="social-btn gmail">
+          <i class="fas fa-envelope"></i><span>Gmail</span>
+        </a>
+        <a href="#" target="_blank" rel="noopener" class="social-btn spotify">
+          <i class="fab fa-spotify"></i><span>Spotify</span>
+        </a>
+        <a href="#" target="_blank" rel="noopener" class="social-btn youtube">
+          <i class="fab fa-youtube"></i><span>YouTube</span>
+        </a>
+        <a href="#" target="_blank" rel="noopener" class="social-btn tiktok">
+          <i class="fab fa-tiktok"></i><span>TikTok</span>
+        </a>
+      </div>
+      <a href="mailto:booking@erezdalal.com" class="book-btn">
+        <i class="fas fa-calendar-check"></i>
+        הזמן עכשיו
       </a>
-      <a class="link" href="#" target="_blank" rel="noopener">
-        <span>Facebook</span>
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.33-.04-1.57-.14-2.88-.14C11.88 2 10 3.66 10 6.7v2.8H7v4h3V22h4v-8.5Z"/></svg>
-      </a>
-      <a class="link" href="mailto:erez.dalal@example.com">
-        <span>Gmail</span>
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Zm9 7.1 8-5.1H4l8 5.1Zm0 2-8-5.07V17h16V9.03L12 14.1Z"/></svg>
-      </a>
-      <a class="link" href="#" target="_blank" rel="noopener">
-        <span>Spotify</span>
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm4.59 14.43a.62.62 0 0 1-.86.21c-2.35-1.44-5.31-1.76-8.8-.96a.62.62 0 1 1-.28-1.22c3.82-.87 7.1-.5 9.73 1.11.3.18.39.57.21.86Zm1.22-2.72a.78.78 0 0 1-1.07.26c-2.69-1.65-6.79-2.13-9.97-1.17a.78.78 0 1 1-.45-1.49c3.63-1.1 8.15-.56 11.24 1.33.37.23.49.71.25 1.07Zm.11-2.84C14.8 8.96 9.5 8.78 6.42 9.72a.94.94 0 1 1-.54-1.8c3.53-1.07 9.38-.86 13.08 1.34a.94.94 0 0 1-.96 1.61Z"/></svg>
-      </a>
-    </nav>
+    </div>
+  </div>
 
-    <footer class="foot">© <span id="year"></span> DJ ארז דלל</footer>
-  </main>
   <script src="script.js"></script>
 </body>
 </html>
